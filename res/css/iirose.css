@@ -141,3 +141,7 @@
 .msg[data-id^="5eb934aca592e"]*/ {
     display: none !important;
 }
+
+.msg[data-id^="5c958f51a3f3c"] {
+    filter: blur(8px);
+}
