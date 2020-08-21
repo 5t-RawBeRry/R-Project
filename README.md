@@ -9,6 +9,16 @@
 
 > 希望在不远的未来会出现更多有趣的 `idea`
 
+### Install
+
+> 因为现在的特殊性，所以以后大概不会发布 `Release`
+
+1. 点击 `Code` > `Download ZIP`
+2. 打开 `Edge(Chrome)` > `扩展` > `开发者模式`
+3. 解压之前下载的 `ZIP` 
+4. 拖入 `扩展` 窗口
+5. 请享受插件叭~
+
 ## Special Thanks
 
 [蔷薇花园：Ruby](https://iirose.com)
