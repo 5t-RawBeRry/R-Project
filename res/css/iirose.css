@@ -5,10 +5,13 @@
 .privatemsgSex,
 .privatemsgSexShadow,
 .whoisAvatarBox>div:nth-child(1),
-.whoisAvatarBox>div:nth-child(1)>div:nth-child(1)/*,
+.whoisAvatarBox>div:nth-child(1)>div:nth-child(1)
+/*,
 .room_chat_content>div:nth-child(1)>div:nth-child(1),
 .room_chat_content>div:nth-child(1)>div:nth-child(2),
-.room_chat_content>div:nth-child(1)>div:nth-child(3)*/ {
+.room_chat_content>div:nth-child(1)>div:nth-child(3)*/
+
+{
     display: none !important;
 }
 
@@ -26,30 +29,34 @@
     width: 50px !important;
 }
 
-.systemCardMediaShare,
-.privatemsgMessagesBodyItemBody>div:nth-child(1)>div:nth-child(1),
-.room_chat_content {
-    border-radius: 10px 10px 10px 0px !important;
-}
-
 .room_chat_content[style*=margin-left]>div:nth-child(2)>div:nth-child(1),
 .privatemsgMessagesBodyItemBody[style*="float:right;"]>div:nth-child(1)>div:nth-child(1),
 .room_chat_content[style*=margin-left] {
-    border-radius: 10px 10px 0px 10px !important;
+    border-radius: 8px 8px 0px 8px !important;
+}
+
+.systemCardMediaShare,
+.privatemsgMessagesBodyItemBody>div:nth-child(1)>div:nth-child(1),
+.room_chat_content {
+    border-radius: 8px 8px 8px 0px !important;
 }
 
 #helpHolder>div:nth-child(4)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
 #helpHolder>div:nth-child(5)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
 #roominfoHolder>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1),
 .room_chat_content[style*=margin-left]>div:nth-child(3) {
-    border-radius: 10px 0px 0px 10px !important;
+    border-radius: 8px 0px 0px 8px !important;
 }
 
 #helpHolder>div:nth-child(4)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(6),
+
 /*此项目会与检察官 房间通知 DIV 产生冲突，故注释，之后寻找其他方法*/
+
+
 /*#helpHolder>div:nth-child(5)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(5),*/
+
 .systemCardMediaShareImg {
-    border-radius: 0px 10px 10px 0px !important;
+    border-radius: 0px 8px 8px 0px !important;
 }
 
 .whoisC>div:nth-child(1)>div:nth-child(2) {
@@ -57,21 +64,23 @@
 }
 
 #moveinputBubble {
-    border-radius: 0px 10px 0px 0px !important;
+    border-radius: 0px 8px 0px 0px !important;
 }
 
 .mapHolderRoomListItem>div:nth-child(1)>div:nth-child(1),
 .followName>div:nth-child(1),
 #makeMoneyHolder>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
 .commonBoxHead {
-    border-radius: 10px 10px 0px 0px !important;
+    border-radius: 8px 8px 0px 0px !important;
 }
 
 .commonBox>div:nth-child(2) {
-    border-radius: 0px 0px 10px 10px !important;
+    border-radius: 0px 0px 8px 8px !important;
 }
 
+
 /*#lockScreenHolder>div:nth-child(2)>div:nth-child(1)>div:nth-child(1),*/
+
 #makeMoneyHolder>div:nth-child(3)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
 #selectHolderBox,
 #initshowLoadBody,
@@ -134,17 +143,54 @@
     border: 0px !important;
 }
 
-/*.msg[data-id^="56c9c1bf05262"],
-.msg[data-id^="5bba34bd423d8"],*/
-.msg[data-id^="5eb9330b844ef"],
-.msg[data-id^="5eb933687020e"],
-.msg[data-id^="5eb933bc97240"],
-.msg[data-id^="5eb933ffa127d"],
-.msg[data-id^="5eb9344c0cb93"]/*,
-.msg[data-id^="5eb934aca592e"]*/ {
-    display: none !important;
-}
 
+/* 直接删除对方消息
+data-id 里请填入对应用户UID
+.msg[data-id^="5eb934aca592e"] {
+    display: none !important;
+} */
+
+
+/* 以模糊的方式屏蔽用户请使用以下格式
+data-id 里请填入对应用户UID
 .msg[data-id^="5c958f51a3f3c"] {
     filter: blur(8px);
+} */
+
+
+/* 将该人的头像换成固定图片
+data-id 里请填入对应用户UID */
+
+
+/* 自定义用户头像 */
+
+.msgavatar[data-uid^="57bfdd4de3691"] {
+    background-image: url(http://r.iirose.com/i/20/3/11/10/0155-A2.jpg) !important;
+}
+
+.msgavatar[data-uid^="58fcb975166d9"] {
+    background-image: url(https://cdn.jsdelivr.net/gh/route-1/storage@latest/2020/08/22/a821ef59d7967e6f89200dac08216c7e) !important;
+}
+
+
+/* 自定义用户气泡背景 */
+
+.msg[data-id^="58fcb975166d9"]>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+    background-image: url(https://cdn.jsdelivr.net/gh/route-1/storage@latest/2020/08/22/4dd90a42a4877ad863291f12ed9a664d) !important;
+    background-size: cover;
+    border-radius: 8px !important;
+}
+
+
+/* 自定义用户气泡字体颜色 */
+
+.msg[data-id^="58fcb975166d9"]>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+    color: #303030;
+}
+
+
+/* 删除用户左（右）下角角标 */
+
+.msg[data-id^="58fcb975166d9"]>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div {
+    display: none;
 }
