@@ -1,15 +1,15 @@
 {
     "content_scripts": [{
-        "css": ["res/css/iirose.css"],
+        "css": ["config/round.css", "config/color.css", "config/user.css"],
         "all_frames": true,
         "matches": ["http://iirose.com/*", "https://iirose.com/*"]
     }],
     "icons": {
-        "192": "res/img/iirose.png"
+        "192": "iirose.png"
     },
     "author": "TakaHashi RyouSuke",
-    "description": "let iirose round!让花园援交吧！",
+    "description": "let iirose!",
     "name": "R Project",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "manifest_version": 2
 }

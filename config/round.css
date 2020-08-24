@@ -1,3 +1,15 @@
+/* R-Project 1.2.0
+Made ❤ with Saiki */
+
+
+/* 圆角，让花园更加md */
+
+@charset "utf-8";
+
+/*.room_chat_content>div:nth-child(1)>div:nth-child(1),
+.room_chat_content>div:nth-child(1)>div:nth-child(2),
+.room_chat_content>div:nth-child(1)>div:nth-child(3),*/
+
 .privatemsgMessagesBodyItemIcon,
 .privatemsgSexBody,
 .privatemsgIcon,
@@ -5,13 +17,7 @@
 .privatemsgSex,
 .privatemsgSexShadow,
 .whoisAvatarBox>div:nth-child(1),
-.whoisAvatarBox>div:nth-child(1)>div:nth-child(1)
-/*,
-.room_chat_content>div:nth-child(1)>div:nth-child(1),
-.room_chat_content>div:nth-child(1)>div:nth-child(2),
-.room_chat_content>div:nth-child(1)>div:nth-child(3)*/
-
-{
+.whoisAvatarBox>div:nth-child(1)>div:nth-child(1) {
     display: none !important;
 }
 
@@ -141,56 +147,4 @@
 
 #initshowBoxContent>div:nth-child(2)>div:nth-child(2) {
     border: 0px !important;
-}
-
-
-/* 直接删除对方消息
-data-id 里请填入对应用户UID
-.msg[data-id^="5eb934aca592e"] {
-    display: none !important;
-} */
-
-
-/* 以模糊的方式屏蔽用户请使用以下格式
-data-id 里请填入对应用户UID
-.msg[data-id^="5c958f51a3f3c"] {
-    filter: blur(8px);
-} */
-
-
-/* 将该人的头像换成固定图片
-data-id 里请填入对应用户UID */
-
-
-/* 自定义用户头像 */
-
-.msgavatar[data-uid^="57bfdd4de3691"] {
-    background-image: url(http://r.iirose.com/i/20/3/11/10/0155-A2.jpg) !important;
-}
-
-.msgavatar[data-uid^="58fcb975166d9"] {
-    background-image: url(https://cdn.jsdelivr.net/gh/route-1/storage@latest/2020/08/22/a821ef59d7967e6f89200dac08216c7e) !important;
-}
-
-
-/* 自定义用户气泡背景 */
-
-.msg[data-id^="58fcb975166d9"]>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
-    background-image: url(https://cdn.jsdelivr.net/gh/route-1/storage@latest/2020/08/22/4dd90a42a4877ad863291f12ed9a664d) !important;
-    background-size: cover;
-    border-radius: 8px !important;
-}
-
-
-/* 自定义用户气泡字体颜色 */
-
-.msg[data-id^="58fcb975166d9"]>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
-    color: #303030;
-}
-
-
-/* 删除用户左（右）下角角标 */
-
-.msg[data-id^="58fcb975166d9"]>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div {
-    display: none;
 }
